@@ -1,0 +1,83 @@
+.main {
+    @include FlexCenter;
+
+    flex-direction: column;
+
+    &__bannerBg {
+        @include FlexCenter;
+
+        background-image: url('../images/bannerBg.jpg');
+        width: 100vw;
+        height: 200px;
+        margin-bottom: 20px;
+
+        @include mq(small) {
+            height: 400px;
+        }
+
+        @include mq(xlarge) {
+            height: 600px;
+        }
+    }
+
+    &__banner {
+        background-image: url('../images/banner.png');
+        width: 250px;
+        height: 55%;
+
+        @include mq(small) {
+            width: 500px;
+        }
+
+        @include mq(xlarge) {
+            width: 750px;
+        }
+    }
+
+    &__heading {
+        font-weight: normal;
+        width: 90%;
+        font-size: 22px;
+    }
+
+    &__heading--right {
+        @include mq(medium) {
+            text-align: right;
+        }
+    }
+
+    &__heading--left {
+        @include mq(medium) {
+            text-align: left;
+        }
+    }
+
+    &__heading--big {
+        font-size: 26px;
+    }
+
+    &__wrapper {
+        @include FlexCenter;
+
+        flex-direction: column;
+
+        @include mq(xlarge) {
+            width: 75%
+        }
+    }
+
+    &__button {
+        margin: 0 auto;
+        width: 200px;
+        height: 40px;
+        border: none;
+        background-color: $orange;
+        font-size: 20px;
+        border-radius: 10px;
+        color: $white;
+
+        @include mq(large) {
+            display: none;
+        }
+    }
+}

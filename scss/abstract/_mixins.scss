@@ -1,0 +1,16 @@
+@use 'sass:map';
+
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mq($size) {
+    @if map.has-key($breakpoints, $size) {
+        $breakpoint: map-get($breakpoints, $size);
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
