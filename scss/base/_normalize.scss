@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light;
+    overflow-x: hidden;
+}
+
+.navigation__list,
+.main__heading,
+.footer__links,
+.footer__logos,
+.footer__heading {
+    margin: 10px 0 10px;
+}
+
+
+.header__icon,
+.header__dropdown,
+.main__bannerBg,
+.main__banner,
+.article__image,
+.footer__FAJ,
+.footer__UMK {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__heading,
+.article__paragraph {
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+.article {
+    @include FlexCenter;
+
+    flex-direction: column;
+    margin: 20px 0 20px;
+
+    @include mq(medium) {
+        flex-direction: row;
+
+    }
+
+    &__section {
+        @include FlexCenter;
+
+        flex-direction: column;
+
+        @include mq(medium) {
+            width: 50%;
+        }
+    }
+
+    &__section--left {
+        @include mq(medium) {
+            align-items: flex-start;
+        }
+    }
+
+    &__section--right {
+        @include mq(medium) {
+            align-items: flex-end;
+        }
+    }
+
+    &__paragraph {
+        width: 90%;
+
+        @include mq(medium) {
+            text-align: left;
+        }
+    }
+
+    &__paragraph--right {
+        @include mq(medium) {
+            text-align: right;
+        }
+    }
+
+    &__image {
+        background-image: url('../images/right.png');
+        width: 100vw;
+        height: 300px;
+        margin-top: 20px;
+        background-position: center;
+
+        @include mq(small) {
+            width: 70%;
+        }
+
+        @include mq(medium) {
+            width: 40%;
+        }
+
+        @include mq(large) {
+            height: 400px;
+        }
+    }
+
+    &__image--change {
+        background-image: url('../images/left.png');
+        height: 400px;
+        background-position: center;
+    }
+
+    &__image--hidden {
+        display: none;
+
+        @include mq(medium) {
+            display: block;
+        }
+    }
+
+    &__paragraph {
+        margin: 5px 0 5px;
+    }
+}

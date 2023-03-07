@@ -1,0 +1,54 @@
+.footer {
+    @include FlexCenter;
+
+    background-color: $dark;
+    margin-top: 20px;
+    padding: 5px;
+    flex-direction: column;
+    color: $white;
+
+    @include mq(large) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px 0px;
+    }
+
+    &__links,
+    &__logos,
+    &__contacts {
+        @include FlexCenter;
+
+        flex-direction: column;
+    }
+
+    &__logos {
+        @include mq(large) {
+            flex-direction: row;
+        }
+    }
+
+    &__contacts {
+        @include mq(large) {
+            align-items: flex-start;
+        }
+    }
+
+    &__paragraph {
+        margin: 5px 0 10px;
+    }
+
+    &__FAJ {
+        background-image: url('../images/faj.png');
+        width: 220px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    &__UMK {
+        background-image: url('../images/umk.png');
+        width: 220px;
+        height: 190px;
+        background-size: contain;
+        margin-bottom: 20px;
+    }
+}
