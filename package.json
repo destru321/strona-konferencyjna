@@ -1,0 +1,20 @@
+{
+  "name": "strona-konferencyjna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "scss" : "sass --watch public/scss/style.scss public/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
