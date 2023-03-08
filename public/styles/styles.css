@@ -96,18 +96,12 @@ a {
     justify-content: flex-end;
   }
 }
-@media screen and (min-width: 1280px) {
-  .navigation {
-    width: 80%;
-    justify-content: flex-end;
-  }
-}
 .navigation__item {
   padding: 2px;
 }
 @media screen and (min-width: 1280px) {
   .navigation__item {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .navigation__link {
@@ -165,17 +159,17 @@ a {
 }
 .main__banner {
   background-image: url("../images/banner.png");
-  width: 210px;
-  height: 70%;
+  width: 252.5px;
+  height: 50%;
 }
 @media screen and (min-width: 640px) {
   .main__banner {
-    width: 420px;
+    width: 505px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__banner {
-    width: 630px;
+    width: 757.5px;
   }
 }
 .main__heading {
@@ -333,7 +327,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .footer__links, .footer__logos, .footer__contacts {
-    width: 30%;
+    width: 33%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -346,40 +340,14 @@ a {
 }
 .footer__FAJ {
   background-image: url("../images/faj.png");
-  width: 220px;
-  height: 100px;
-  margin-right: 10px;
-}
-@media screen and (min-width: 1024px) {
-  .footer__FAJ {
-    width: 150px;
-    height: 60px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__FAJ {
-    width: 220px;
-    height: 100px;
-  }
+  width: 140px;
+  height: 60px;
 }
 .footer__UMK {
   background-image: url("../images/umk.png");
-  width: 200px;
-  height: 170px;
-  background-size: contain;
+  width: 130px;
+  height: 110px;
   margin: 15px;
-}
-@media screen and (min-width: 1024px) {
-  .footer__UMK {
-    width: 150px;
-    height: 100px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__UMK {
-    width: 200px;
-    height: 170px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
