@@ -22,15 +22,15 @@
 
     &__banner {
         background-image: url('../images/banner.png');
-        width: 250px;
-        height: 55%;
+        width: 210px;
+        height: 70%;
 
         @include mq(small) {
-            width: 500px;
+            width: 420px;
         }
 
         @include mq(xlarge) {
-            width: 750px;
+            width: 630px;
         }
     }
 

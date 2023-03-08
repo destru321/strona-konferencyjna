@@ -17,20 +17,16 @@
     &__logos,
     &__contacts {
         @include FlexCenter;
-
+        
+        @include mq(large) {
+            width: 30%;
+        }
         flex-direction: column;
     }
 
     &__logos {
-
         @include mq(large) {
             flex-direction: row;
-        }
-    }
-
-    &__contacts {
-        @include mq(large) {
-            align-items: flex-start;
         }
     }
 
@@ -43,17 +39,33 @@
         width: 220px;
         height: 100px;
         margin-right: 10px;
+
+        @include mq(large) {
+            width: 150px;
+            height: 60px;
+        }
+
+        @include mq(xlarge) {
+            width: 220px;
+            height: 100px;
+        }
     }
 
     &__UMK {
         background-image: url('../images/umk.png');
-        width: 220px;
-        height: 190px;
+        width: 200px;
+        height: 170px;
         background-size: contain;
-        margin-bottom: 20px;
+        margin: 15px;
 
         @include mq(large) {
-            margin: 0;
+            width: 150px;
+            height: 100px;
+        }
+
+        @include mq(xlarge) {
+            width: 200px;
+            height: 170px;
         }
     }
 }
