@@ -10,16 +10,11 @@
         justify-content: flex-end;
     }
 
-    @include mq(xlarge) {
-        width: 80%;
-        justify-content: flex-end;
-    }
-
     &__item {
         padding: 2px;
 
         @include mq(xlarge) {
-            font-size: 22px;
+            font-size: 20px;
         }
     }
 

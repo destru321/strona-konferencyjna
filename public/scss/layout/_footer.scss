@@ -19,7 +19,7 @@
         @include FlexCenter;
         
         @include mq(large) {
-            width: 30%;
+            width: 33%;
         }
         flex-direction: column;
     }
@@ -36,36 +36,14 @@
 
     &__FAJ {
         background-image: url('../images/faj.png');
-        width: 220px;
-        height: 100px;
-        margin-right: 10px;
-
-        @include mq(large) {
-            width: 150px;
-            height: 60px;
-        }
-
-        @include mq(xlarge) {
-            width: 220px;
-            height: 100px;
-        }
+        width: 140px;
+        height: 60px;
     }
 
     &__UMK {
         background-image: url('../images/umk.png');
-        width: 200px;
-        height: 170px;
-        background-size: contain;
+        width: 130px;
+        height: 110px;
         margin: 15px;
-
-        @include mq(large) {
-            width: 150px;
-            height: 100px;
-        }
-
-        @include mq(xlarge) {
-            width: 200px;
-            height: 170px;
-        }
     }
 }
