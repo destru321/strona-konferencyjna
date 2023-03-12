@@ -1,6 +1,8 @@
 .header {
     background-color: $dark;
     padding: 10px;
+    position: sticky;
+    top: 0;
 
     @include mq(large) {
         @include FlexCenter;
